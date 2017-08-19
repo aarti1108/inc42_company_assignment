@@ -5,5 +5,10 @@
   },
   "require-dev": {
     "purrweb/yii2-heroku": "*"
+  },
+  "scripts": {
+    "post-install-cmd": [
+        "sh post-install-cmd.sh"
+    ]
   }
 }
