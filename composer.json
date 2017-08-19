@@ -1,9 +1,15 @@
 {
   "require" : {
     "yiisoft/yii2": "2.0.10",
-    "monolog/monolog": "^1.22"
+    "monolog/monolog": "^1.22",
+    "purrweb/yii2-heroku": "*"
   },
   "require-dev": {
     "heroku/heroku-buildpack-php": "*"
-  }
+  },
+  "scripts": {
+        "post-install-cmd": [
+            "sh post-install-cmd.sh"
+        ]
+    }
 }
