@@ -1,10 +1,9 @@
 {
   "require" : {
     "yiisoft/yii2": "2.0.10",
-    "monolog/monolog": "^1.22",
-    "purrweb/yii2-heroku": "*"
+    "monolog/monolog": "^1.22"
   },
   "require-dev": {
-    "heroku/heroku-buildpack-php": "*"
+    "purrweb/yii2-heroku": "*"
   }
 }

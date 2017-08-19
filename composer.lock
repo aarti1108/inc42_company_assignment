@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "762e5fdcf644af05bb03ce290a8663c1",
-    "content-hash": "1fe98cfdfeacd9ea7cc343465893dfb9",
+    "hash": "bd30936d63d2da05028b4e2ad4d4d6f6",
+    "content-hash": "851757b3b1abd69c2fef0ef8ebfd4c68",
     "packages": [
         {
             "name": "bower-asset/jquery",
@@ -379,50 +379,6 @@
             "time": "2016-10-10 12:19:37"
         },
         {
-            "name": "purrweb/yii2-heroku",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/PurrWeb/yii2-heroku.git",
-                "reference": "ea99076cf1f57db5f6c220ca293d83f74f33b041"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/PurrWeb/yii2-heroku/zipball/ea99076cf1f57db5f6c220ca293d83f74f33b041",
-                "reference": "ea99076cf1f57db5f6c220ca293d83f74f33b041",
-                "shasum": ""
-            },
-            "require": {
-                "yiisoft/yii2": "~2.0"
-            },
-            "type": "yii2-extension",
-            "autoload": {
-                "psr-4": {
-                    "purrweb\\heroku\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Dmitriy Krista",
-                    "email": "dmitriy.krista@gmail.com"
-                }
-            ],
-            "description": "Generate yii2 environments for easy deployment on heroku",
-            "homepage": "https://github.com/PurrWeb/yii2-heroku",
-            "keywords": [
-                "deploy",
-                "extension",
-                "generator",
-                "heroku",
-                "yii2"
-            ],
-            "time": "2015-06-30 09:43:40"
-        },
-        {
             "name": "yiisoft/yii2",
             "version": "2.0.10",
             "source": {
@@ -569,48 +525,48 @@
     ],
     "packages-dev": [
         {
-            "name": "heroku/heroku-buildpack-php",
-            "version": "v122",
+            "name": "purrweb/yii2-heroku",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/heroku/heroku-buildpack-php.git",
-                "reference": "82b6fbf8d6a9693ec2f01ccf993202bfc1bc528a"
+                "url": "https://github.com/PurrWeb/yii2-heroku.git",
+                "reference": "ea99076cf1f57db5f6c220ca293d83f74f33b041"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/82b6fbf8d6a9693ec2f01ccf993202bfc1bc528a",
-                "reference": "82b6fbf8d6a9693ec2f01ccf993202bfc1bc528a",
+                "url": "https://api.github.com/repos/PurrWeb/yii2-heroku/zipball/ea99076cf1f57db5f6c220ca293d83f74f33b041",
+                "reference": "ea99076cf1f57db5f6c220ca293d83f74f33b041",
                 "shasum": ""
             },
-            "bin": [
-                "bin/heroku-hhvm-apache2",
-                "bin/heroku-hhvm-nginx",
-                "bin/heroku-php-apache2",
-                "bin/heroku-php-nginx"
-            ],
-            "type": "library",
+            "require": {
+                "yiisoft/yii2": "~2.0"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "purrweb\\heroku\\": ""
+                }
+            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "authors": [
                 {
-                    "name": "David Zuelke",
-                    "email": "dz@heroku.com"
+                    "name": "Dmitriy Krista",
+                    "email": "dmitriy.krista@gmail.com"
                 }
             ],
-            "description": "Toolkit for starting a PHP application locally, with or without foreman, using the same config for PHP/HHVM and Apache2/Nginx as on Heroku",
-            "homepage": "https://github.com/heroku/heroku-buildpack-php",
+            "description": "Generate yii2 environments for easy deployment on heroku",
+            "homepage": "https://github.com/PurrWeb/yii2-heroku",
             "keywords": [
-                "apache",
-                "apache2",
-                "foreman",
+                "deploy",
+                "extension",
+                "generator",
                 "heroku",
-                "hhvm",
-                "nginx",
-                "php"
+                "yii2"
             ],
-            "time": "2017-08-03 22:13:11"
+            "time": "2015-06-30 09:43:40"
         }
     ],
     "aliases": [],
