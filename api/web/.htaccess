@@ -1,3 +1,18 @@
+Header set Access-Control-Allow-Methods "GET,HEAD,POST,PUT,DELETE,OPTIONS"
+Header set Access-Control-Allow-Origin "*"
+Header set Cache-Control "no-store, no-cache"
+Header set X-UA-Compatible "IE=EmulateIE7"
+Header set X-Content-Type-Options "nosniff"
+Header set X-Download-Options "noopen"
+Header set X-FRAME-OPTIONS "DENY"
+Header set X-XSS-Protection "1; mode=block"
+#Gzip
+#compress json
+#<ifmodule mod_deflate.c>
+#AddOutputFilterByType DEFLATE application/json
+#</ifmodule>
+#End Gzip
+
 php_value short_open_tag Off
 
 RewriteEngine On
@@ -6,5 +21,3 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
 RewriteRule . index.php
-
-Options +FollowSymLinks
