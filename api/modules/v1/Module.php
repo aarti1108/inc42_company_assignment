@@ -1,6 +1,6 @@
 <?php
 
-namespace api\modules\v3;
+namespace api\modules\v1;
 
 /**
  * API v3 Module.
