@@ -1,8 +1,7 @@
 {
   "require" : {
-    "silex/silex": "^2.0.4",
-    "monolog/monolog": "^1.22",
-    "symfony/twig-bridge": "^3"
+    "yiisoft/yii2": "2.0.10",
+    "monolog/monolog": "^1.22"
   },
   "require-dev": {
     "heroku/heroku-buildpack-php": "*"
