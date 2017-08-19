@@ -13,8 +13,6 @@ Header set X-XSS-Protection "1; mode=block"
 #</ifmodule>
 #End Gzip
 
-php_value short_open_tag Off
-
 RewriteEngine On
 
 RewriteCond %{REQUEST_FILENAME} !-f
