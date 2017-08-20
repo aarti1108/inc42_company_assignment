@@ -3,15 +3,18 @@
 namespace api\modules\v1\controllers;
 
 use Yii;
-use yii\rest\ActiveController;
 
 /**
  * StaticPageController represents the static-pages API. It shows app related data.
  *
  * @author Aarti Pawar <aarti@pharmeasy.in>
  */
-class StaticPageController extends ActiveController
+class StaticPageController extends ApiController
 {
+    /**
+     * {@inheritdoc}
+     */
+    public $modelClass = 'common\models\User';
 
     /**
      * Get the static page data to show on a app.

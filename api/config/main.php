@@ -9,7 +9,6 @@ return [
     'id' => 'api',
     'name' => 'yii.mobile.api',
     'basePath' => dirname(__DIR__),
-    'bootstrap' => ['log', 'tracker'],
     'modules' => [
         'v1' => [
             'basePath' => '@app/modules/v1',
@@ -17,12 +16,12 @@ return [
         ],
     ],
     'components' => [
-        /*'user' => [
-            'identityClass' => 'api\common\models\Customer',
+        'user' => [
+            'identityClass' => 'common\models\User',
             'enableAutoLogin' => false,
             'enableSession' => false,
             'loginUrl' => null,
-        ],*/
+        ],
         'urlManager' => [
             'enablePrettyUrl' => true,
             'enableStrictParsing' => true,
